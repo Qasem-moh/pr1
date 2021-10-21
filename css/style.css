@@ -1,0 +1,540 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 1366px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* -------------------------  start of rafef --------------------- */
+
+#about {
+  display: inline-block;
+
+  margin-top: 100px;
+  width: 40%;
+  margin-left: 200px;
+
+  padding: 10px;
+}
+#aboutImg {
+  display: inline-block;
+  margin-top: -300px;
+  margin-left: 400px;
+}
+
+.aboutp {
+  color: rgb(92, 90, 90);
+  font-family: "Exo", sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+  padding: 20px;
+}
+#myh2 {
+  color: #e077dd;
+  font-family: "Exo", sans-serif;
+  padding-left: 60px;
+  font-weight: bold;
+  font-size: 30px;
+}
+#aboutImg img {
+  width: 50%;
+  height: 80%;
+  float: right;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#mymain {
+  padding: 0px 0;
+  margin-top: 0px;
+  background-color: #eee;
+  margin-bottom: 0px;
+  font-family: "Amatic SC", cursive;
+}
+.effect {
+  display: inline-block;
+  width: 338.5px;
+  height: 400px;
+}
+
+#gallary {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: hsl(281, 36%, 64%);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(94, 92, 92, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 25%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.overlay-imgs {
+  display: inline-block;
+}
+
+.overlay-imgs:hover .overlay {
+  opacity: 1;
+}
+
+.locatin {
+  display: inline-block;
+  margin: 1px;
+}
+#mapid {
+  display: inline-block;
+  padding: 20px;
+  margin-left: 170px;
+}
+
+#branches {
+}
+#branches p {
+  font-size: 30px;
+  color: white;
+  padding: 30px 20px;
+  font-family: "Exo", sans-serif;
+  text-align: center;
+  background-color: hsl(281, 36%, 64%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info {
+  margin: 20px;
+  padding-left: 150px;
+  color: rgb(48, 42, 42);
+}
+.info li {
+  font-size: 20px;
+  color: rgb(59, 59, 59);
+  font-weight: bolder;
+  font-family: "Exo", sans-serif;
+  padding: 10px;
+}
+
+.liel {
+  margin-left: 5px;
+  padding-left: 20px;
+}
+
+/* -------------------------  end of rafef --------------------- */
+
+/* -------------------------  staret of dina --------------------- */
+
+.social li {
+  color: rgba(92, 126, 121, 0.897);
+  list-style-type: none;
+  display: inline-table;
+  width: 80px;
+  height: 70px;
+  line-height: 40px;
+  padding: 2%;
+  border: 1.5px solid rgba(138, 133, 153, 0.4);
+  cursor: pointer;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  transition: ease 0.9s;
+  text-align: center;
+  /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  vertical-align: middle;
+  /* &:hover {
+    color: rgba(167, 146, 129, 1);
+    border: 1px solid rgba(167, 146, 129, 1);
+  } */
+}
+
+/* .social:hover > li {
+opacity: 0.5;
+background-color: rgb(117, 124, 124);
+}
+#ourteam .social:hover > li:hover {
+opacity: 1;
+} */
+
+#copyright {
+  color: rgb(61, 53, 35);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  bottom: auto;
+}
+
+#base {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+  font-size: x-small;
+  font-weight: lighter;
+  color: rgb(61, 53, 53);
+}
+#ourteam .button {
+  margin-top: 10px;
+  border: none;
+  outline: 5;
+  display: inline-block;
+  padding: 8px;
+  color: rgba(204, 216, 202, 0.897);
+  background-color: rgb(27, 27, 27);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+}
+
+.team-members {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#ourteam .card {
+  /* float: left; */
+  display: inline-block;
+  width: 220px;
+  background-color: hsl(281, 36%, 64%);
+  padding: 10px;
+  margin: 20px;
+  /* font-family: "Amatic SC", cursive; */
+  /* font-family: "Abril Fatface", cursive; */
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+}
+#ourteam h1 {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 20px;
+  font-size: 100px;
+}
+#h2dena {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  font-family: "Amatic SC", cursive;
+}
+
+.social,
+#copyrightSection {
+  margin: 20px 0;
+  text-align: center;
+}
+.social li:hover {
+  color: black;
+}
+footer {
+  background-color: hsl(281, 51%, 89%);
+  width: 100%;
+}
+#Denaform form {
+  border: 3px solid #f1f1f1;
+  font-family: "Amatic SC", cursive;
+}
+#formh2 {
+  font-family: "Amatic SC", cursive;
+  font-size: 80px;
+  text-align: center;
+  background-color: hsl(281, 36%, 64%);
+  padding: 20px;
+
+  color: white;
+}
+
+#signup1 {
+  font-size: 35px;
+  background-color: hsl(281, 36%, 64%);
+  padding: 20px;
+
+  text-align: center;
+  display: block;
+  color: white;
+}
+
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid hsl(281, 36%, 64%);
+  color: #000;
+  box-sizing: border-box;
+  text-align: center;
+}
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+input[type="submit"] {
+  background-color: hsl(281, 36%, 64%);
+  color: #fff;
+  border: none;
+}
+
+/* -------------------------  end of dina --------------------- */
+/* ------------------------- start of ethar -------------------*/
+
+@keyframes headerAnimation {
+  0% {
+    background-image: url("https://i.pinimg.com/originals/d3/5e/ac/d35eac3afc3e23c48de3703465b89528.jpg");
+    background-size: cover;
+  }
+  25% {
+    background-image: url("https://i.pinimg.com/originals/f6/75/69/f67569c7e35d1e704c4cbe03f1a3714f.jpg");
+    background-size: cover;
+  }
+  50% {
+    background-image: url("https://images.unsplash.com/photo-1560243563-62087d88da39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+    background-size: cover;
+  }
+
+  75% {
+    background-image: url("../img/f1.jpg");
+    background-size: cover;
+  }
+
+  100% {
+    background-image: url("../img/f2.jpg");
+    background-size: cover;
+  }
+}
+
+.hero-image {
+  clear: both;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  animation: headerAnimation ease-in 30s infinite;
+}
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 400px;
+  left: 350px;
+  font-size: 80px;
+  font-family: "Reggae One", cursive;
+  color: rgb(0, 0, 0);
+}
+.hero-text #candygifts {
+  font-size: 25px;
+  font-family: "Amatic SC", cursive;
+}
+/* text row css by Ethar */
+.text-row span,
+.text-row div {
+  display: inline-block;
+  margin: 0px 50px;
+}
+.text-dark-grey,
+.text-hover-dark-grey:hover,
+.text-dark-gray,
+.text-hover-dark-gray:hover {
+  color: #fff !important;
+  background-color: hsl(281, 36%, 64%) !important;
+}
+.text-padding-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  font-size: 28px;
+  font-family: "Amatic SC", cursive;
+}
+.text-center {
+  text-align: center !important;
+}
+
+#row {
+  display: block;
+  height: 100%;
+  line-height: 1.8;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+.text-container:after,
+.text-container:before,
+.text-panel:after,
+.text-panel:before,
+.text-row:after,
+.text-row:before,
+.text-row-padding:after,
+.text-row-padding:before,
+.text-cell-row:before,
+.text-cell-row:after,
+.text-clear:after,
+.text-clear:before,
+.text-bar:before,
+.text-bar:after,
+.text-container:after,
+.text-container:before,
+.text-panel:after,
+.text-panel:before,
+.text-row:after,
+.text-row:before,
+.text-row-padding:after,
+.text-row-padding:before,
+.text-cell-row:before,
+.text-cell-row:after,
+.text-clear:after,
+.text-clear:before,
+.text-bar:before,
+.text-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ------------------------- end of ethar -------------------*/
+
+/* --------------------------- start of qassem----------------------- */
+nav {
+  background-color: white;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  /* display: flex; */
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  /* background: linear-gradient(to right, red,rgb(95, 7, 7), purple, rgb(202, 91, 202)); */
+  width: 100%;
+  height: 55px;
+  transition: 4s;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+  /* width: 150px; */
+  line-height: 20px;
+  text-align: center;
+  float: left;
+  margin-top: 15px;
+}
+nav ul li:last-child {
+  float: right;
+  margin-top: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(5, 4, 4);
+  font-size: 20px;
+  padding: 15px 25px;
+  /* width: 150px; */
+  font-family: "Reggae One", cursive;
+}
+
+nav ul li i {
+  text-decoration: none;
+  color: rgb(5, 4, 4);
+  font-size: 20px;
+  /* margin-left: 25px; */
+  padding: 15px;
+  /* width: 20px; */
+  padding: 0 auto;
+}
+nav ul li a:hover:last-child {
+  border-bottom: 3px solid black;
+}
+
+/* .active {
+  border-bottom: 3px solid hsl(281, 36%, 64%);
+} */
+
+#myBtnToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  color: hsl(281, 36%, 64%);
+  cursor: pointer;
+  font-size: 45px;
+  background-color: transparent;
+  border: none;
+  -webkit-text-stroke: 2px black;
+}
+
+#myBtnToTop:hover {
+  color: #555;
+}
+
+.CounterProductInIndex {
+  display: block;
+  z-index: 1000;
+  position: fixed;
+  margin-left: 755px;
+  font-size: 18px;
+  margin-top: 14px;
+  color: #000;
+}
+
+/*  ------------------------end of qassem ---------------------- */
+.break {
+  background: hsl(281, 36%, 64%);
+  width: 100%;
+  height: 50px;
+}
+
+.cartCounter {
+  position: relative;
+  top: 5px;
+  right: 35px;
+  font-size: 22px;
+  border-radius: 50%;
+}
+.card {
+  position: relative;
+}
+.card:hover .TeamOverlay {
+  opacity: 0.6;
+}
+.TeamOverlay {
+  width: 200px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+}
+.TeamOverlay div {
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 25px !important;
+}
+.TeamOverlay div a {
+  color: white;
+  text-decoration: none;
+}
+.container {
+  padding: 30px;
+  background-color: #f1f1f1;
+}

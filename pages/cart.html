@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/overlay.css" />
+    <link
+    rel="shortcut icon"
+    href="https://img.icons8.com/emoji/48/000000/wrapped-gift.png"
+    type="image/x-icon"
+  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://img.icons8.com/emoji/48/000000/wrapped-gift.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+  </head>
+  <body>
+    <header>
+      <nav id="navBar">
+        <ul>
+          <li id="linkTop" class="links">
+            <a href="../index.html" class="linkss">Home</a>
+          </li>
+          <li id="linkGift" class="links">
+            <a href="../index.html#row" class="linkss">Services</a>
+          </li>
+          <li id="linkContact" class="links">
+            <a href="../index.html#branches" class="linkss">Contact</a>
+          </li>
+          <li id="Product" class="links">
+            <a href="products.html#all-products" class="linkss">Products</a>
+          </li>
+          <li id="linkAbout" class="links">
+            <a href="ourteam.html#h1" class="linkss">Our team</a>
+          </li>
+          <li id="Cart" class="links">
+            <a href="#" class="linkss"
+              ><i class="fas fa-shopping-cart"></i></a
+            ><span class="cartCounter" id="cart">0</span>
+          </li>
+        </ul>
+        <p id="carts" class="CounterProductInIndex"></p>
+      </nav>
+
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 id="okashi">Okashi</h1>
+          <p id="candygifts">Candy & Gifts Store</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="break"></div>
+
+    <div id="overlay" >
+      <div class='container' >
+          <div class='window'">
+            <div class='order-info'>
+              <div class='order-info-content'>
+                <h2><i class="fa fa-shopping-cart"></i>  <span class="CartCounter">0</span></h2>
+                <h2>Order Summary </h2>
+                        <div class='line'></div>
+                  <div>
+                    <table id="checkoutInfo">
+      
+                    </table>
+                  </div>
+                  <div class='line'></div>
+                  <p>Total : <span class="TotalPrice">0</span> JD </p>
+        </div>
+        </div>
+                <div class='credit-info'>
+                  <div class='credit-info-content'>
+                    <table class='half-input-table'>
+                      <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+                        <span id="CloseForm" onclick="off()">✖</span>
+                        <div class='dropdown-select'>
+                        <ul>
+                          <li>Master Card</li>
+                          <li>American Express</li>
+                          </ul></div>
+                        </div>
+                       </td></tr>
+                    </table>
+                    <form id="payForm">
+                    <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+                    Card Number
+                    <input class='input-field'  required type="number"></input>
+                    Card Holder
+                    <input class='input-field' required></input>
+                    <table class='half-input-table'>
+                      <tr>
+                        <td> Expires
+                          <input class='input-field'required type="number"> </input>
+                        </td>
+                        <td>CVC
+                          <input class='input-field'required type="number"></input>
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
+                    <button  onclick="CorrectOn()" class='pay-btn'>Checkout</button>
+                  
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+            
+    </div>
+    <div id="CorectOverlay" >
+      <div class='CorectContainer'onclick="off()" >
+          <div class='CorectWindow'">
+  
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+              <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+              <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+  
+            </svg>
+            <p class="success">Payment Successful!</p>
+  
+              </div>
+              
+            </div>
+            
+    </div>
+    
+      <div class="products-list">
+        <div class="plist"></div>
+      </div>
+        <div id="Total">
+          <p>
+            Subtotal (<span class="CartCounter">0</span> items):
+            <span class="TotalPrice">0</span> JD
+          </p>
+          <button onclick="on()" id="checkout">
+            Proceed to checkout
+          </button>
+        </div>
+
+    </main>
+    <footer>
+      <section id="socialmediabuttons">
+        <h2 id="h2dena">Follow us on :</h2>
+
+        <ul class="social">
+          <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+          <li><i class="fa fa-github" aria-hidden="true"></i></li>
+          <li><i class="fa fa-snapchat" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+        </ul>
+      </section>
+      <section>
+        <p id="copyright">OkashiNinjas © 2021</p>
+        <p id="base">Based in Jordan</p>
+      </section>
+      <button onclick="scrollTopFunction()" id="myBtnToTop" title="Go to top">
+        <i class="fas fa-arrow-alt-circle-up"></i>
+      </button>
+    </footer>
+    <script src="../js/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bc2402e035.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/cart.js"></script>
+
+  </body>
+</html>

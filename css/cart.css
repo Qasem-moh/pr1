@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 1366px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.plist {
+  background-color: #eee;
+}
+.product-img {
+  float: left;
+  padding: 20px 0 20px 20px;
+}
+.product-img img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+.product-info {
+  margin: 20px;
+  font-size: 32px;
+  float: left;
+}
+.product-info h1 {
+  font-weight: bold;
+}
+.product-info label {
+  font-size: 20px;
+}
+
+.product-info h2 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+.product-price {
+  float: right;
+  font-size: 32px;
+  margin: 50px 50px 0 0;
+}
+.product {
+  width: 100%;
+  background-color: #eee;
+}
+.products-list {
+  /* margin-top: 50px; */
+  padding-top: 20px;
+  min-height: 200px;
+  background: #eee;
+  border: 1px solid black;
+}
+hr {
+  clear: both;
+}
+hr:last-child {
+  clear: both;
+  visibility: hidden;
+}
+#quantity {
+  border-radius: 15%;
+  padding: 10px 20px;
+}
+.deletButton {
+  background: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.685);
+  cursor: pointer;
+  font-weight: bold;
+}
+#checkout {
+  font-size: 19px;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-bottom: 100px;
+  cursor: pointer;
+  background: hsl(281, 36%, 64%);
+  color: #fff;
+  transition: all 0.2s ease;
+}
+#checkout:hover {
+  background: hsla(281, 36%, 64%, 0.795);
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#Total p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+#Total {
+  float: right;
+}
+footer {
+  clear: both;
+}
+/* 3333333333333 */
+.overlay-form {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  z-index: 4;
+  opacity: 0;
+  padding: 80px 100px;
+  overflow: auto;
+  margin-bottom: 50px;
+  display: none;
+  /* transition: top 500ms ease-in-out, opacity 500ms ease-in-out,
+    height 0ms ease-in-out 500ms; */
+}
+.overlay-form .close-btn {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.overlay-form h1 {
+  font-size: 32px;
+  color: #fff;
+}
+
+.overlay-form .form-element {
+  margin: 20px 0px;
+}
+.overlay-form label {
+  display: block;
+  font-size: 17px;
+  color: #000;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.overlay-form input {
+  width: 100%;
+  padding: 6px;
+  font-size: 17px;
+  border: 2px solid #eee;
+  background: #fff;
+  outline: none;
+  border-radius: 10px;
+}
+.overlay-form button,
+.center button {
+  margin-top: 10px;
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background: #fff;
+  color: #222;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center button {
+  width: 150px;
+  height: 40px;
+  font-weight: 600;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+body.activeForm .overlay-form {
+  z-index: 2;
+  opacity: 1;
+  top: 0px;
+  height: 100vh;
+  transition: top 500ms ease-in-out, opacity 500ms ease-in-out,
+    height 0ms ease-in-out 0ms;
+}
+#ConfirmBTN {
+  cursor: pointer;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  background: rgba(238, 238, 238, 1);
+  border-radius: 15px;
+  padding: 50px;
+}
+
+.col-25 {
+  -ms-flex: 35%; /* IE10 */
+  flex: 35%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 65%; /* IE10 */
+  flex: 65%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 5px 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+.product-info label {
+  display: inline !important;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background: rgb(255, 238, 0) !important;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgb(255, 238, 0);
+  border: 1px solid black !important;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  padding: 12px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/* ------------------------------ */
+#checkoutInfo td {
+  padding: 2px 25px;
+  font-size: 24px;
+}
+
+#EmptyCart {
+  display: block;
+  font-size: 32px;
+  margin: 50px 44%;
+  color: rgba(0, 0, 0, 0.295);
+}
+#CloseForm {
+  position: relative;
+  bottom: 80px;
+  left: 220px;
+  font-size: 20px;
+  color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#Total {
+}
+#Total p {
+  padding: 5px 30px;
+}
